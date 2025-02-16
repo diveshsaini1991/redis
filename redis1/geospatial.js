@@ -13,7 +13,8 @@ const init = async () => {
     const res4 = await client.geosearch(
         'shop:open',  
         'FROMLONLAT', -122.27652, 37.805186, 
-        'BYRADIUS', 1, 'km' 
+        'BYRADIUS', 1, 'km',
+        'WITHDIST'
     );
 
     console.log('Nearby stations:', res4);
