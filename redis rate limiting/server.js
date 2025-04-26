@@ -1,7 +1,4 @@
 const express = require("express");
-const redis = require("./redis-client.js");
-const rateLimiter = require("./middleware/rate-limiter.js");
-const getData = require("./controller/get-data.js");
 const router = require("./router/routes.js");
 
 const app = express();
